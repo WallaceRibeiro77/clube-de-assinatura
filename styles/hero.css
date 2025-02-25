@@ -1,0 +1,52 @@
+main{
+    background-color: var(--shape-background);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 3.2rem;
+    
+    #hero{
+        background:url(../assets/imagens/Image.png) no-repeat center;
+        background-size: cover;
+        height: 46.4rem;
+        padding: 2rem;
+        
+        header{
+            margin-bottom: 4.8rem;
+            display: flex;
+            justify-content: space-between;
+
+            img{
+                height: 4.8rem;
+            }
+
+            button{
+                border-radius: .8rem;
+                background: var(--pink-dark);
+                color: var(--text-title);
+                padding: 0rem 2rem;
+                height: 4rem;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: var(--pink-base);
+                }
+            }
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+            text-align: center;
+
+            h1{
+                color: var(--text-title);
+                font-size: 2.8rem;
+            }
+            p{
+                color: var(--text-body);
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

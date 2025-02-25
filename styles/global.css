@@ -10,7 +10,7 @@
 
 :root{
     font-size: 62.5%;
-    --ff: 'Raleway', sans-serif;
+    --ff: "Raleway";
 
     --pink-light:#C59DD2;
     --pink-base:#9547A5;
@@ -72,4 +72,8 @@
 
 body{
     font-size: 1.6rem;
+}
+.container{
+    width: 37.5rem;
+    margin:auto;
 }
