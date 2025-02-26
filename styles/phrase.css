@@ -1,0 +1,30 @@
+#phrase{
+    margin: 2.8rem 0 3.2rem;
+    padding: 2rem;
+    p{
+        padding-top: .4rem;
+        color: var(--text-body);
+        text-align: center;
+    }
+
+    img{
+        height: 4rem;
+    }
+    img:nth-child(1){
+        transform: rotate(15deg);
+        position: relative;
+        left: 25rem;
+
+    }
+    img:nth-child(4){
+        transform: rotate(15deg);
+        position: relative;
+        left: 25rem;
+    }
+    img:nth-child(3){
+        height: 3.2rem;
+        transform: rotate(-30deg);
+        position: relative;
+        bottom: 2rem;
+    }
+}

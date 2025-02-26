@@ -1,0 +1,26 @@
+#collection{
+    padding: 10rem 0 8.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+
+    .collection-header{
+
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h2{
+                font-size: 2rem;
+                color: var(--text-body);
+            }
+        }
+        p{
+            text-align: center;
+            color: var(--text-body);
+        }
+
+    }
+    
+}
