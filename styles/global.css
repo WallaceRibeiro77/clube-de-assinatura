@@ -77,3 +77,10 @@ body{
     width: 37.5rem;
     margin:auto;
 }
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    align-items: flex-end;
+}

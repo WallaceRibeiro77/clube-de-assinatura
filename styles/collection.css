@@ -3,14 +3,16 @@
     display: flex;
     flex-direction: column;
     gap: 6.4rem;
+    height: 100vh;
 
     .collection-header{
 
+        margin-bottom: 6.4rem;
         div{
             display: flex;
             justify-content: space-between;
             align-items: center;
-
+            
             h2{
                 font-size: 2rem;
                 color: var(--text-body);
@@ -20,7 +22,142 @@
             text-align: center;
             color: var(--text-body);
         }
-
+        
     }
-    
+    .collection-items{
+        display: flex;  
+        justify-content: center;
+        color: var(--text-body);
+
+        .items{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+
+            .collection-text-box1{
+                position: absolute;
+                top: -3rem;
+                left: -7.5rem;
+                height: 3rem;
+                p{
+                    font-size: 1rem;
+                }
+            }
+            
+            .collection-text-box3{
+                position: relative;
+                top: 18.5rem;
+                left: 10rem;
+                height: 3rem;
+                p{
+                    font-size: 1rem;
+                }
+            }
+            
+            .collection-content{
+                display: flex;
+                position: relative;
+                
+                .collection-text-box2{
+                    position: absolute;
+                    bottom: -13.5rem;
+                    left: -5.5rem;
+                    height: 3rem;
+                    width: 3rem;
+                    p{
+                        font-size: 1rem;
+                        width: 8rem;
+                    }
+                }
+
+                .collection-content-items{
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+
+                    img:nth-child(1){
+                        z-index: 4;
+                        left: -4.5rem;
+                        top: 15rem;
+                        height: 8.5rem;
+                        position: absolute;
+                    }
+
+                    img:nth-child(2){
+                        z-index: 3;
+                        height: 20.7rem;
+                        position: relative;
+                    }
+
+                    img:nth-child(3){
+                        z-index: 2;
+                        right: -4.5rem;
+                        bottom: 6.5rem;
+                        transform: rotate(15deg);
+                        height: 18rem;
+                        position: absolute;
+                    }
+
+                    img:nth-child(4){
+                        z-index: 1;
+                        right: -8.5rem;
+                        transform: rotate(27deg);
+                        height: 18rem;
+                        position: absolute;
+                    }
+
+                }
+            }
+
+            
+        }
+    }
+
 }
+
+/*
+
+                #livro{
+                z-index: 3;
+                height: 20.7rem;
+                position: relative;
+            }
+            #broche{
+                z-index: 4;
+                left: 6rem;
+                top: 15rem;
+                height: 8.5rem;
+                position: absolute;
+            }
+            #page1{
+                z-index: 2;
+                right: 6.3rem;
+                bottom: 6.5rem;
+                transform: rotate(15deg);
+                height: 18rem;
+                position: absolute;
+            }
+            #page2{
+                z-index: 1;
+                right: 2rem;
+                transform: rotate(27deg);
+                height: 18rem;
+                position: absolute;
+            }
+            .arrow {
+                width: 50px;
+                margin: 5px;
+            }
+            
+            .collection-text {
+                position: absolute;
+                font-size: 14px;
+                color: var(--text-body);
+            }
+
+
+
+*/
