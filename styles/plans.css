@@ -1,0 +1,101 @@
+#plans{
+    color: var(--text-body);
+    padding: 10rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+
+    h3{
+        color: var(--text-body);
+        text-align: center;
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+    .cards-plans-wrapper{
+        display: flex;
+        gap: 1.6rem;
+
+        overflow-x: auto;
+        padding-bottom: 1.6rem;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        width: calc(100% + 3.2rem);
+
+        .item-plan{   
+            border-radius: 2.4rem;
+            border: 1px solid var(--shape-stroke);
+            background: var(--shape-base);
+            padding: 3.2rem 3.2rem 2.8rem;
+            min-width: 27.2rem;
+
+            scroll-snap-align: start;
+
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+            
+            h4{
+                color: var(--blue-light);
+            }
+            .card-infos{
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+
+                .card-price{
+                    p{
+                        color: var(--text-title);
+                        font-size: 3rem;
+                        font-weight: 700;
+                        span{
+                            color: var(--text-title);
+                            font-size: 2rem;
+                        }
+                    }
+                    span{
+                        color: var(--text-label);
+                        font-size: 1.4rem;
+                        line-height: 140%;
+                    }
+                }
+
+                .promo-diff{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.2rem;
+
+                    .promo-items{
+                        display: flex;
+                        align-items: center;
+                        p{
+                            color: var(--text-body);
+                            font-size: 1.2rem;
+                            line-height: 140%;
+                        }
+                    }
+                }
+            }
+            
+            button{
+                color: var(--text-body);
+                height: 4rem;
+                padding: 0 2rem;
+                border-radius: .8rem;
+                background: var(--blue-dark);
+                
+                &:hover{
+                    cursor: pointer;
+                    background-color: var(--blue-light);
+                }
+
+            }
+        }
+    }
+}
